@@ -96,8 +96,8 @@ body {
 
     stroke: url(#gradient);
     stroke-width: 1px;
-    stroke-dasharray: 38 60;
-    stroke-linecap: round;
+    stroke-dasharray: 0 60;
+    stroke-linecap: initial;
 
     transform: scale(4.7);
     transform-origin: center;

@@ -47,12 +47,23 @@ body {
     align-items: center;
 
     padding: 16px;
-    border: 1px solid rgba(245, 245, 245, 0.541);
+    /* border: 1px solid rgba(245, 245, 245, 0.541); */
 }
 
 .timer__item:not(:last-child) {
     /* всем блокам timer__item кроме последнего*/
     margin-right: 32px;
+}
+
+.timer__circle {
+    --size: 70px;
+    width: var(--size);
+    height: var(--size);
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .timer__num {
@@ -62,5 +73,45 @@ body {
 }
 
 .timer__name {
+    margin-top: 16px;
     font-weight: 300;
+}
+
+/*Circle*/
+.circle {
+    --offset: -10px;
+
+    position: absolute;
+
+    top: var(--offset);
+    right: var(--offset);
+    bottom: var(--offset);
+    left: var(--offset);
+
+    transform: rotate(-90deg);
+}
+
+.segment {
+    fill: transparent;
+
+    stroke: url(#gradient);
+    stroke-width: 1px;
+    stroke-dasharray: 38 60;
+    stroke-linecap: round;
+
+    transform: scale(4.7);
+    transform-origin: center;
+    transition: stroke-dasharray 1s linear;
+}
+
+.gradient_1 {
+    stop-color: #c587f0;
+}
+
+.gradient_2 {
+    stop-color: #f66969;
+}
+
+.gradient_3 {
+    stop-color: #fcb045;
 }

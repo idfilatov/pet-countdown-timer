@@ -14,7 +14,19 @@
         <div class="timer__title">Countdown</div>
         <div class="timer__box">
             <div class="timer__item">
-                <div class="timer__num">10</div>
+                <div class="timer__circle">
+                    <svg class="circle" viewBox="0 0 100 100">
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop class="gradient_1" offset="0%"></stop>
+                            <stop class="gradient_2" offset="50%"></stop>
+                            <stop class="gradient_3" offset="100%"></stop>
+                        </linearGradient>
+                        <circle class=" segment" r="9.55%" cx="50%" cy="50%">
+                        </circle>
+                    </svg>
+                    <div class="timer__num">10</div>
+                </div>
+
                 <div class="timer__name">days</div>
             </div>
             <div class="timer__item">
